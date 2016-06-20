@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+    <title>Lógica programação</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+	<!--  paginacao -->
+	<link href="css/paginacao.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+.footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+	  width: 100%;
+	  position: fixed;
+	  bottom: 0;
+	  float: bottom;
+    }
+	
+	.esconder 
+{
+	display: none;
+}
+</style>
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                   <a href="index.html"><img src="imagens/home.png" width="10%" height="20%"></img>
+                        Lógica de Programação
+                    </a>
+                </li>
+                <li>
+                    <a href="cap1.html">Aula 1 - Introdução</a>
+                </li>
+                <li>
+                    <a href="cap2.html">Aula 2 - Estrutura condicional</a>
+                </li>
+                <li>
+                    <a href="cap3.html">Aula 3 - Vetores</a>
+                </li>
+				<li>
+                    <a href="contato.html">Contato</a>
+                </li>
+				<li>
+                    <a href="quiz.html">Questionário</a>
+                </li>
+
+
+				<li>
+					Progresso:
+					<progress max="100" value="100"> <progress />
+                </li>
+				 <li>
+				<br><br><br><br><br><br><br><br>
+                    	<img src="imagens/logoufpr.png" width="89%" height="60%" align="center">
+                </li>	
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12" id="aula1Div1">
+                        <h1>Vetores</h1>
+                       <p> Um vetor é uma variável que permite agrupar dados do mesmo tipo sob um só nome.</p>
+					   <p>Quando falamos de vetor temos que ter a seguinte visão, uma variável comum consegue 
+					   guardar apenas um valor por vez, enquanto um vetor consegue armazenar diversos valores
+					   cada um em uma posição diferente.</p>
+
+						<p>Ao observar a tabela 1 podemos entender como um vetor funciona, por exemplo o valor
+						10 está localizado na posição 0.</p>
+						<img src ="imagens/tabela1.jpg">
+					   					  				
+	
+                        <br>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Ocultar menu</a><br><br>
+						</div>
+
+
+						<div id="div2" class="esconder" >
+						<h1>PSEUDOCÓDIGO </h1>
+						<p>Os algoritmos são escritos em uma linguagem de programação chamada pseudocódigo. Isso é uma alusão à uma posterior linguagem de programação (Java, Visual Basic, C#, PHP), ou seja, quando for programar em java, usaremos código java, se for em PHP, usaremos código PHP. Logo, a lógica de programação independe de sua linguagem. </p>
+						<p>O código deve ser fácil de se interpretar e fácil de codificar, deve ser o intermediário entre a linguagem falada e a linguagem de programação.</p>
+
+						</div>
+						<!-- <source src="video.png" width="30%" align="center"> -->
+						
+						<video width="50%" height="50%" controls>
+							<source src="videos/vetor.mp4" type="video/mp4">							
+							Your browser does not support the video tag.
+						</video>
+
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+  $("#wrapper").toggleClass("toggled");
+
+        e.preventDefault();
+       
+		if (document.getElementById("menu-toggle").innerHTML == "Mostrar Menu")
+		
+		document.getElementById("menu-toggle").innerHTML = "Esconder Menu";
+		else
+		
+		document.getElementById("menu-toggle").innerHTML = "Mostrar Menu";		
+    });		
+
+</script>
+
+
+</body>
+<footer class="footer text-center">
+  <p>L&A Corporation. All rights reserved</p>
+</footer>
+</html>
